@@ -163,6 +163,12 @@ export function CocktailsDrinks({ onOpenOrder, onOpenReservation }: CocktailsDri
                 src="/images/cocktails_drinks.jpg"
                 alt="WhatsUp Cafe Handcrafted Cocktails & Mixology"
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.includes('unsplash')) {
+                    target.src = 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80';
+                  }
+                }}
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0D0E0C] via-transparent to-black/30" />

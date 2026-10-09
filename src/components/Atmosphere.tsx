@@ -40,6 +40,12 @@ export function Atmosphere({ onOpenReservation }: AtmosphereProps) {
                 src="/images/rooftop_sunset.jpg"
                 alt="Romantic rooftop evening at WhatsUp Cafe"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.includes('unsplash')) {
+                    target.src = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80';
+                  }
+                }}
                 referrerPolicy="no-referrer"
               />
               <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-xs text-white/90 px-2.5 py-1 text-[11px] font-mono rounded-xs border border-white/15 flex items-center gap-1.5">
@@ -67,6 +73,12 @@ export function Atmosphere({ onOpenReservation }: AtmosphereProps) {
                 src="/images/intro_lifestyle.jpg"
                 alt="Friends sharing kebabs and laughter at WhatsUp Cafe"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.includes('unsplash')) {
+                    target.src = 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80';
+                  }
+                }}
                 referrerPolicy="no-referrer"
               />
               <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-xs text-white/90 px-2.5 py-1 text-[11px] font-mono rounded-xs border border-white/15 flex items-center gap-1.5">
@@ -94,6 +106,12 @@ export function Atmosphere({ onOpenReservation }: AtmosphereProps) {
                 src="/images/hero_rooftop.jpg"
                 alt="Live music and rooftop vibes at WhatsUp Cafe"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.includes('unsplash')) {
+                    target.src = 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80';
+                  }
+                }}
                 referrerPolicy="no-referrer"
               />
               <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-xs text-white/90 px-2.5 py-1 text-[11px] font-mono rounded-xs border border-white/15 flex items-center gap-1.5">

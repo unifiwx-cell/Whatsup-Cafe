@@ -29,16 +29,16 @@ export function Introduction({ onOpenReservation, onExploreMenu }: IntroductionP
             className="lg:col-span-6 space-y-8"
           >
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-xs uppercase font-bold tracking-[0.2em] text-[#777B53]">
+              <div className="flex items-center gap-3 text-xs uppercase font-bold tracking-[0.2em] text-[#FF5500]">
                 <span>Southern Avenue Experience</span>
-                <span className="w-8 h-px bg-[#777B53]/40" />
+                <span className="w-8 h-px bg-[#FF5500]/40" />
                 <span className="font-bengali tracking-normal text-sm text-[#10110F]/70">হোয়াটসআপ ক্যাফে</span>
               </div>
               
               <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05] text-[#10110F]">
                 NOT JUST A PLACE.
                 <br />
-                <span className="font-serif-luxury italic font-normal text-[#777B53]">
+                <span className="font-serif-luxury italic font-normal text-[#FF5500]">
                   A WHOLE
                 </span>{' '}
                 <span>MOOD.</span>
@@ -53,7 +53,7 @@ export function Introduction({ onOpenReservation, onExploreMenu }: IntroductionP
             <div className="grid grid-cols-2 gap-6 pt-4 border-t border-[#10110F]/10">
               <div className="space-y-1.5">
                 <div className="flex items-center gap-2 text-[#10110F] font-bold text-sm">
-                  <Wine className="w-4 h-4 text-[#777B53]" />
+                  <Wine className="w-4 h-4 text-[#FF5500]" />
                   <span>Curated Bar & Spirits</span>
                 </div>
                 <p className="text-xs text-[#10110F]/65 leading-relaxed">
@@ -63,7 +63,7 @@ export function Introduction({ onOpenReservation, onExploreMenu }: IntroductionP
 
               <div className="space-y-1.5">
                 <div className="flex items-center gap-2 text-[#10110F] font-bold text-sm">
-                  <Flame className="w-4 h-4 text-[#D9A35D]" />
+                  <Flame className="w-4 h-4 text-[#FF5500]" />
                   <span>Sizzling Tandoor & Wok</span>
                 </div>
                 <p className="text-xs text-[#10110F]/65 leading-relaxed">
@@ -73,7 +73,7 @@ export function Introduction({ onOpenReservation, onExploreMenu }: IntroductionP
 
               <div className="space-y-1.5">
                 <div className="flex items-center gap-2 text-[#10110F] font-bold text-sm">
-                  <Music className="w-4 h-4 text-[#777B53]" />
+                  <Music className="w-4 h-4 text-[#FF5500]" />
                   <span>Live Sounds & Chill</span>
                 </div>
                 <p className="text-xs text-[#10110F]/65 leading-relaxed">
@@ -83,7 +83,7 @@ export function Introduction({ onOpenReservation, onExploreMenu }: IntroductionP
 
               <div className="space-y-1.5">
                 <div className="flex items-center gap-2 text-[#10110F] font-bold text-sm">
-                  <Utensils className="w-4 h-4 text-[#D9A35D]" />
+                  <Utensils className="w-4 h-4 text-[#FF5500]" />
                   <span>Open-Air Dining</span>
                 </div>
                 <p className="text-xs text-[#10110F]/65 leading-relaxed">
@@ -97,16 +97,16 @@ export function Introduction({ onOpenReservation, onExploreMenu }: IntroductionP
               <button
                 type="button"
                 onClick={onOpenReservation}
-                className="px-6 py-3.5 text-xs font-bold tracking-wider uppercase text-white bg-[#10110F] hover:bg-[#1B1D19] transition-all rounded-sm flex items-center gap-2 shadow-lg"
+                className="px-6 py-3.5 text-xs font-bold tracking-wider uppercase text-white bg-[#10110F] hover:bg-[#FF5500] transition-all rounded-sm flex items-center gap-2 shadow-lg"
               >
                 <span>Book Your Evening</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#FF5500]" />
+                <ArrowRight className="w-3.5 h-3.5 text-[#FF5500] group-hover:text-white" />
               </button>
               
               <button
                 type="button"
                 onClick={onExploreMenu}
-                className="px-6 py-3.5 text-xs font-semibold tracking-wider uppercase text-[#10110F] hover:text-[#777B53] transition-colors"
+                className="px-6 py-3.5 text-xs font-semibold tracking-wider uppercase text-[#10110F] hover:text-[#FF5500] transition-colors"
               >
                 Explore Dining Highlights →
               </button>
@@ -129,6 +129,12 @@ export function Introduction({ onOpenReservation, onExploreMenu }: IntroductionP
                   src="/images/intro_lifestyle.jpg"
                   alt="Friends enjoying rooftop lounge evening at WhatsUp Cafe Kolkata"
                   className="w-full h-[360px] sm:h-[420px] object-cover hover:scale-105 transition-transform duration-700"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.src.includes('unsplash')) {
+                      target.src = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80';
+                    }
+                  }}
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute bottom-4 left-4 right-4 bg-black/75 backdrop-blur-sm text-white px-4 py-2.5 rounded-sm flex items-center justify-between text-xs">
@@ -149,16 +155,22 @@ export function Introduction({ onOpenReservation, onExploreMenu }: IntroductionP
                   src="/images/cocktails_drinks.jpg"
                   alt="Artisanal cocktails served at WhatsUp Cafe"
                   className="w-full h-44 sm:h-52 object-cover hover:scale-105 transition-transform duration-700"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.src.includes('unsplash')) {
+                      target.src = 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80';
+                    }
+                  }}
                   referrerPolicy="no-referrer"
                 />
                 <div className="bg-[#10110F] text-white px-3 py-2 text-[11px] font-medium flex items-center justify-between">
                   <span className="text-white/80">Signature Mixology</span>
-                  <span className="text-[#D9A35D]">Craft Bar</span>
+                  <span className="text-[#FF5500]">Craft Bar</span>
                 </div>
               </motion.div>
 
               {/* Decorative accent frame */}
-              <div className="absolute -top-4 -right-4 w-32 h-32 border-2 border-[#777B53]/30 -z-10 rounded-sm" />
+              <div className="absolute -top-4 -right-4 w-32 h-32 border-2 border-[#FF5500]/30 -z-10 rounded-sm" />
             </div>
           </motion.div>
 

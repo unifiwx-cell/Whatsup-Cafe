@@ -76,6 +76,12 @@ export function RooftopExperience({ onOpenReservation }: RooftopExperienceProps)
               }
               alt="WhatsUp Cafe Rooftop View Kolkata"
               className="w-full h-full object-cover transition-all duration-700 filter brightness-90"
+              onError={(e) => {
+                const target = e.currentTarget;
+                if (!target.src.includes('unsplash')) {
+                  target.src = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80';
+                }
+              }}
               referrerPolicy="no-referrer"
             />
 
@@ -144,7 +150,7 @@ export function RooftopExperience({ onOpenReservation }: RooftopExperienceProps)
           </div>
 
           <div className="p-6 bg-[#1B1D19] border border-white/10 rounded-sm space-y-2">
-            <div className="text-xs font-bold tracking-widest text-[#777B53] uppercase">
+            <div className="text-xs font-bold tracking-widest text-[#FF5500] uppercase">
               03 · Late Hours
             </div>
             <h3 className="text-lg font-bold text-white">Open Till 12:30 AM</h3>

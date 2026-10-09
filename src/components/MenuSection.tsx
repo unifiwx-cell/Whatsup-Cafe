@@ -223,6 +223,12 @@ export function MenuSection({ onOpenOrder, onOpenReservation }: MenuSectionProps
                       src={selectedItem.imageUrl}
                       alt={selectedItem.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (!target.src.includes('unsplash')) {
+                          target.src = 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80';
+                        }
+                      }}
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute bottom-2 left-2 bg-black/80 backdrop-blur-sm text-white px-2.5 py-1 text-[11px] rounded-sm font-mono">

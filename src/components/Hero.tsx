@@ -36,6 +36,12 @@ export function Hero({ onOpenReservation, onExploreMenu }: HeroProps) {
           src="/images/hero_rooftop.jpg"
           alt="WhatsUp Cafe Southern Avenue Kolkata Rooftop Lounge at Night"
           className="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.08]"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (!target.src.includes('unsplash')) {
+              target.src = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80';
+            }
+          }}
           referrerPolicy="no-referrer"
         />
         {/* Multilayer gradient scrim for WCAG AA text legibility */}
