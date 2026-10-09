@@ -48,11 +48,11 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#10110F] text-[#F6F2E9] selection:bg-[#D4FF45] selection:text-[#10110F]">
+    <div className="min-h-screen bg-[#10110F] text-[#F6F2E9] selection:bg-[#FF5500] selection:text-white">
       {/* Scroll Progress Indicator Bar */}
       <motion.div
         style={{ scaleX }}
-        className="fixed top-0 left-0 right-0 h-[3px] bg-[#D4FF45] origin-left z-[60] shadow-[0_0_12px_rgba(212,255,69,0.8)] pointer-events-none"
+        className="fixed top-0 left-0 right-0 h-[3px] bg-[#FF5500] origin-left z-[60] shadow-[0_0_14px_rgba(255,85,0,0.85)] pointer-events-none"
       />
 
       {/* Fixed Navigation */}

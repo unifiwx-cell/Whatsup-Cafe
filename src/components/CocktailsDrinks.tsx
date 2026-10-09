@@ -120,7 +120,7 @@ export function CocktailsDrinks({ onOpenOrder, onOpenReservation }: CocktailsDri
                     </div>
 
                     <div className="text-right shrink-0">
-                      <span className="text-base font-bold font-mono text-[#D4FF45] tabular-nums">
+                      <span className="text-base font-bold font-mono text-[#FF5500] tabular-nums">
                         ₹{drink.price}
                       </span>
                     </div>
@@ -142,14 +142,14 @@ export function CocktailsDrinks({ onOpenOrder, onOpenReservation }: CocktailsDri
               <button
                 type="button"
                 onClick={onOpenReservation}
-                className="px-6 py-3 text-xs font-bold uppercase tracking-wider text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] rounded-sm transition-colors"
+                className="px-6 py-3 text-xs font-bold uppercase tracking-wider text-white bg-[#FF5500] hover:bg-[#e64a00] rounded-sm transition-colors cursor-pointer shadow-md"
               >
                 Reserve Bar Seating
               </button>
               <button
                 type="button"
                 onClick={onOpenOrder}
-                className="px-6 py-3 text-xs font-semibold uppercase tracking-wider text-white border border-white/20 hover:border-white/40 rounded-sm transition-colors"
+                className="px-6 py-3 text-xs font-semibold uppercase tracking-wider text-white border border-white/20 hover:border-[#FF5500] hover:text-[#FF5500] rounded-sm transition-colors cursor-pointer"
               >
                 Order Cocktails Online
               </button>
@@ -160,7 +160,7 @@ export function CocktailsDrinks({ onOpenOrder, onOpenReservation }: CocktailsDri
           <div className="lg:col-span-5 relative">
             <div className="relative h-full min-h-[400px] rounded-sm overflow-hidden border border-white/15 bg-neutral-900 shadow-2xl">
               <img
-                src="/src/assets/images/whatsup_cocktails_drinks_1791547864350.jpg"
+                src="/images/cocktails_drinks.jpg"
                 alt="WhatsUp Cafe Handcrafted Cocktails & Mixology"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -174,7 +174,7 @@ export function CocktailsDrinks({ onOpenOrder, onOpenReservation }: CocktailsDri
                     <GlassWater className="w-3.5 h-3.5" />
                     Featured Pour
                   </span>
-                  <span className="text-[#D4FF45] font-bold">₹{selectedDrink.price}</span>
+                  <span className="text-[#FF5500] font-bold">₹{selectedDrink.price}</span>
                 </div>
                 
                 <h4 className="text-base font-bold text-white">

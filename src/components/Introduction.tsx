@@ -100,7 +100,7 @@ export function Introduction({ onOpenReservation, onExploreMenu }: IntroductionP
                 className="px-6 py-3.5 text-xs font-bold tracking-wider uppercase text-white bg-[#10110F] hover:bg-[#1B1D19] transition-all rounded-sm flex items-center gap-2 shadow-lg"
               >
                 <span>Book Your Evening</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#D4FF45]" />
+                <ArrowRight className="w-3.5 h-3.5 text-[#FF5500]" />
               </button>
               
               <button
@@ -126,14 +126,14 @@ export function Introduction({ onOpenReservation, onExploreMenu }: IntroductionP
               {/* Primary Large Lifestyle Image */}
               <div className="relative rounded-sm overflow-hidden shadow-2xl border-4 border-white bg-neutral-200">
                 <img
-                  src="/src/assets/images/whatsup_intro_lifestyle_1791547826311.jpg"
+                  src="/images/intro_lifestyle.jpg"
                   alt="Friends enjoying rooftop lounge evening at WhatsUp Cafe Kolkata"
                   className="w-full h-[360px] sm:h-[420px] object-cover hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute bottom-4 left-4 right-4 bg-black/75 backdrop-blur-sm text-white px-4 py-2.5 rounded-sm flex items-center justify-between text-xs">
                   <span className="font-semibold tracking-wide">Rooftop Evenings · Southern Avenue</span>
-                  <span className="text-[#D4FF45] font-mono text-[11px]">Since 2015</span>
+                  <span className="text-[#FF5500] font-mono text-[11px]">Since 2015</span>
                 </div>
               </div>
 
@@ -146,7 +146,7 @@ export function Introduction({ onOpenReservation, onExploreMenu }: IntroductionP
                 className="absolute -bottom-10 -left-6 sm:-left-10 w-48 sm:w-60 rounded-sm overflow-hidden shadow-2xl border-4 border-white bg-neutral-900 z-20"
               >
                 <img
-                  src="/src/assets/images/whatsup_cocktails_drinks_1791547864350.jpg"
+                  src="/images/cocktails_drinks.jpg"
                   alt="Artisanal cocktails served at WhatsUp Cafe"
                   className="w-full h-44 sm:h-52 object-cover hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"

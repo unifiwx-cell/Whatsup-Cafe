@@ -60,12 +60,12 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
         {isSubmitted ? (
           /* Confirmation Pass Screen */
           <div className="space-y-6 text-center py-4">
-            <div className="w-14 h-14 bg-[#D4FF45]/20 text-[#D4FF45] rounded-full flex items-center justify-center mx-auto border border-[#D4FF45]/40">
+            <div className="w-14 h-14 bg-[#FF5500]/20 text-[#FF5500] rounded-full flex items-center justify-center mx-auto border border-[#FF5500]/40">
               <CheckCircle2 className="w-8 h-8" />
             </div>
 
             <div className="space-y-2">
-              <span className="text-xs uppercase tracking-[0.2em] text-[#D4FF45] font-bold">
+              <span className="text-xs uppercase tracking-[0.2em] text-[#FF5500] font-bold">
                 Table Reserved Successfully
               </span>
               <h3 className="text-2xl sm:text-3xl font-black text-white">
@@ -77,10 +77,10 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
             </div>
 
             {/* Digital Pass Card */}
-            <div className="p-5 bg-[#10110F] border border-[#D4FF45]/30 rounded-sm text-left space-y-3 font-mono text-xs">
+            <div className="p-5 bg-[#10110F] border border-[#FF5500]/30 rounded-sm text-left space-y-3 font-mono text-xs">
               <div className="flex items-center justify-between border-b border-white/10 pb-2">
                 <span className="text-white/50">CONFIRMATION REF</span>
-                <span className="text-[#D4FF45] font-bold text-sm">{confirmationCode}</span>
+                <span className="text-[#FF5500] font-bold text-sm">{confirmationCode}</span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-white/50">GUEST NAME</span>
@@ -102,13 +102,13 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
 
             <div className="text-[11px] text-white/50 space-y-1">
               <p>📍 Gate 2, 122/A Southern Avenue, Kolkata (Opp. Nazrul Manch)</p>
-              <p>Need to make changes? Call us directly at <a href={`tel:${CAFE_INFO.phoneRaw}`} className="text-[#D4FF45] underline">{CAFE_INFO.phone}</a></p>
+              <p>Need to make changes? Call us directly at <a href={`tel:${CAFE_INFO.phoneRaw}`} className="text-[#FF5500] underline">{CAFE_INFO.phone}</a></p>
             </div>
 
             <button
               type="button"
               onClick={resetForm}
-              className="w-full py-3 text-xs font-bold uppercase tracking-wider text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] rounded-sm transition-colors cursor-pointer"
+              className="w-full py-3 text-xs font-bold uppercase tracking-wider text-white bg-[#FF5500] hover:bg-[#e64a00] rounded-sm transition-colors cursor-pointer shadow-md"
             >
               Done & Return to Site
             </button>
@@ -117,12 +117,12 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
           /* Booking Form Screen */
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="space-y-1 border-b border-white/10 pb-4">
-              <div className="flex items-center gap-1.5 text-xs uppercase font-bold tracking-widest text-[#D4FF45]">
+              <div className="flex items-center gap-1.5 text-xs uppercase font-bold tracking-widest text-[#FF5500]">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Reserve Your Table · টেবিল বুকিং</span>
               </div>
               <h3 className="text-2xl font-black text-white">
-                WHATS<span className="text-[#D4FF45]">UP</span> CAFE ROOFTOP
+                WHATS<span className="text-[#FF5500]">UP</span> CAFE ROOFTOP
               </h3>
               <p className="text-xs text-white/60">
                 Opposite Nazrul Manch, Southern Avenue · Open 12:00 PM – 12:30 AM
@@ -141,7 +141,7 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
                     id={`${formId}-guests`}
                     value={formData.guests}
                     onChange={(e) => setFormData({ ...formData, guests: Number(e.target.value) })}
-                    className="w-full bg-[#10110F] border border-white/15 focus:border-[#D4FF45] focus:outline-none text-white text-xs py-2.5 pl-9 pr-3 rounded-sm"
+                    className="w-full bg-[#10110F] border border-white/15 focus:border-[#FF5500] focus:outline-none text-white text-xs py-2.5 pl-9 pr-3 rounded-sm"
                   >
                     {[1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20].map((num) => (
                       <option key={num} value={num}>
@@ -160,7 +160,7 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
                   id={`${formId}-seating`}
                   value={formData.seatingArea}
                   onChange={(e) => setFormData({ ...formData, seatingArea: e.target.value as any })}
-                  className="w-full bg-[#10110F] border border-white/15 focus:border-[#D4FF45] focus:outline-none text-white text-xs py-2.5 px-3 rounded-sm"
+                  className="w-full bg-[#10110F] border border-white/15 focus:border-[#FF5500] focus:outline-none text-white text-xs py-2.5 px-3 rounded-sm"
                 >
                   <option value="Rooftop Terrace">Rooftop Terrace (Open-Air)</option>
                   <option value="Sunset Deck">Sunset Deck (Balcony Views)</option>
@@ -183,7 +183,7 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
                     required
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                    className="w-full bg-[#10110F] border border-white/15 focus:border-[#D4FF45] focus:outline-none text-white text-xs py-2 pl-9 pr-3 rounded-sm"
+                    className="w-full bg-[#10110F] border border-white/15 focus:border-[#FF5500] focus:outline-none text-white text-xs py-2 pl-9 pr-3 rounded-sm"
                   />
                 </div>
               </div>
@@ -198,7 +198,7 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
                     id={`${formId}-time`}
                     value={formData.time}
                     onChange={(e) => setFormData({ ...formData, time: e.target.value })}
-                    className="w-full bg-[#10110F] border border-white/15 focus:border-[#D4FF45] focus:outline-none text-white text-xs py-2.5 pl-9 pr-3 rounded-sm"
+                    className="w-full bg-[#10110F] border border-white/15 focus:border-[#FF5500] focus:outline-none text-white text-xs py-2.5 pl-9 pr-3 rounded-sm"
                   >
                     <option value="13:00">1:00 PM (Lunch)</option>
                     <option value="15:00">3:00 PM (Afternoon)</option>
@@ -225,7 +225,7 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
                   placeholder="e.g. Debanjan Sen"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full bg-[#10110F] border border-white/15 focus:border-[#D4FF45] focus:outline-none text-white text-xs py-2.5 px-3 rounded-sm placeholder:text-white/30"
+                  className="w-full bg-[#10110F] border border-white/15 focus:border-[#FF5500] focus:outline-none text-white text-xs py-2.5 px-3 rounded-sm placeholder:text-white/30"
                 />
               </div>
 
@@ -241,7 +241,7 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
                     placeholder="+91 98300 00000"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-[#10110F] border border-white/15 focus:border-[#D4FF45] focus:outline-none text-white text-xs py-2.5 px-3 rounded-sm placeholder:text-white/30"
+                    className="w-full bg-[#10110F] border border-white/15 focus:border-[#FF5500] focus:outline-none text-white text-xs py-2.5 px-3 rounded-sm placeholder:text-white/30"
                   />
                 </div>
 
@@ -253,7 +253,7 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
                     id={`${formId}-occasion`}
                     value={formData.occasion}
                     onChange={(e) => setFormData({ ...formData, occasion: e.target.value })}
-                    className="w-full bg-[#10110F] border border-white/15 focus:border-[#D4FF45] focus:outline-none text-white text-xs py-2.5 px-3 rounded-sm"
+                    className="w-full bg-[#10110F] border border-white/15 focus:border-[#FF5500] focus:outline-none text-white text-xs py-2.5 px-3 rounded-sm"
                   >
                     <option value="Casual Dining / Adda">Casual Dining / Adda</option>
                     <option value="Romantic Date Night">Romantic Date Night</option>
@@ -268,12 +268,12 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
             {/* Note & Direct Call */}
             <div className="p-3 bg-white/5 rounded-sm border border-white/10 flex items-center justify-between text-xs text-white/70">
               <span className="flex items-center gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-[#D4FF45]" />
+                <MapPin className="w-3.5 h-3.5 text-[#FF5500]" />
                 Immediate seating confirmation
               </span>
               <a
                 href={`tel:${CAFE_INFO.phoneRaw}`}
-                className="text-[#D4FF45] hover:underline flex items-center gap-1 font-mono"
+                className="text-[#FF5500] hover:underline flex items-center gap-1 font-mono"
               >
                 <Phone className="w-3 h-3" />
                 {CAFE_INFO.phone}
@@ -283,7 +283,7 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full py-3.5 text-xs font-bold uppercase tracking-wider text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] transition-colors rounded-sm shadow-[0_0_20px_rgba(212,255,69,0.25)] cursor-pointer"
+              className="w-full py-3.5 text-xs font-bold uppercase tracking-wider text-white bg-[#FF5500] hover:bg-[#e64a00] transition-colors rounded-sm shadow-[0_0_20px_rgba(255,85,0,0.35)] cursor-pointer"
             >
               Confirm Table Reservation
             </button>

@@ -16,7 +16,7 @@ export function RooftopExperience({ onOpenReservation }: RooftopExperienceProps)
         {/* Header & Mode Switcher */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
           <div className="space-y-3 max-w-2xl">
-            <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.2em] text-[#D4FF45]">
+            <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.2em] text-[#FF5500]">
               <Compass className="w-3.5 h-3.5" />
               <span>Open-Air Sky Terrace · ছাদের মায়াবী দৃশ্য</span>
             </div>
@@ -24,7 +24,7 @@ export function RooftopExperience({ onOpenReservation }: RooftopExperienceProps)
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05] text-white">
               UP HERE,
               <br />
-              <span className="font-serif-luxury italic font-normal text-[#D4FF45]">
+              <span className="font-serif-luxury italic font-normal text-[#FF5500]">
                 TIME SLOWS
               </span>{' '}
               <span>DOWN.</span>
@@ -42,7 +42,7 @@ export function RooftopExperience({ onOpenReservation }: RooftopExperienceProps)
               onClick={() => setTimeMode('golden')}
               className={`px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-sm transition-all flex items-center gap-2 cursor-pointer ${
                 timeMode === 'golden'
-                  ? 'bg-[#D9A35D] text-[#10110F] shadow-sm'
+                  ? 'bg-[#FF5500] text-white shadow-sm'
                   : 'text-white/60 hover:text-white'
               }`}
             >
@@ -54,7 +54,7 @@ export function RooftopExperience({ onOpenReservation }: RooftopExperienceProps)
               onClick={() => setTimeMode('night')}
               className={`px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-sm transition-all flex items-center gap-2 cursor-pointer ${
                 timeMode === 'night'
-                  ? 'bg-[#D4FF45] text-[#10110F] shadow-sm'
+                  ? 'bg-[#FF5500] text-white shadow-sm'
                   : 'text-white/60 hover:text-white'
               }`}
             >
@@ -71,8 +71,8 @@ export function RooftopExperience({ onOpenReservation }: RooftopExperienceProps)
             <img
               src={
                 timeMode === 'golden'
-                  ? '/src/assets/images/whatsup_rooftop_sunset_1791547875878.jpg'
-                  : '/src/assets/images/whatsup_hero_rooftop_1791547809865.jpg'
+                  ? '/images/rooftop_sunset.jpg'
+                  : '/images/hero_rooftop.jpg'
               }
               alt="WhatsUp Cafe Rooftop View Kolkata"
               className="w-full h-full object-cover transition-all duration-700 filter brightness-90"
@@ -87,7 +87,7 @@ export function RooftopExperience({ onOpenReservation }: RooftopExperienceProps)
               <span className="bg-black/60 backdrop-blur-md px-3 py-1 border border-white/20 rounded-xs">
                 ROOFTOP · 5TH FLOOR
               </span>
-              <span className="bg-black/60 backdrop-blur-md px-3 py-1 border border-white/20 rounded-xs text-[#D4FF45]">
+              <span className="bg-black/60 backdrop-blur-md px-3 py-1 border border-white/20 rounded-xs text-[#FF5500]">
                 {timeMode === 'golden' ? 'GOLDEN HOUR AMBIENCE' : 'CITY LIGHTS & LIVE SOUNDS'}
               </span>
             </div>
@@ -95,7 +95,7 @@ export function RooftopExperience({ onOpenReservation }: RooftopExperienceProps)
             {/* Bottom Caption Overlay */}
             <div className="absolute bottom-6 left-6 right-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div className="space-y-1 max-w-xl bg-black/60 backdrop-blur-md p-4 rounded-sm border border-white/10">
-                <div className="flex items-center gap-2 text-[#D4FF45] text-xs font-bold tracking-widest uppercase">
+                <div className="flex items-center gap-2 text-[#FF5500] text-xs font-bold tracking-widest uppercase">
                   <Wind className="w-3.5 h-3.5" />
                   <span>Southern Avenue Breeze</span>
                 </div>
@@ -112,7 +112,7 @@ export function RooftopExperience({ onOpenReservation }: RooftopExperienceProps)
               <button
                 type="button"
                 onClick={onOpenReservation}
-                className="px-6 py-3.5 text-xs font-bold tracking-wider uppercase text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] transition-all rounded-sm flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(212,255,69,0.3)] whitespace-nowrap"
+                className="px-6 py-3.5 text-xs font-bold tracking-wider uppercase text-white bg-[#FF5500] hover:bg-[#e64a00] transition-all rounded-sm flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(255,85,0,0.35)] whitespace-nowrap cursor-pointer"
               >
                 <span>Experience The Rooftop</span>
                 <ArrowUpRight className="w-4 h-4" />
@@ -124,7 +124,7 @@ export function RooftopExperience({ onOpenReservation }: RooftopExperienceProps)
         {/* 3 Experience Anchors below */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
           <div className="p-6 bg-[#1B1D19] border border-white/10 rounded-sm space-y-2">
-            <div className="text-xs font-bold tracking-widest text-[#D4FF45] uppercase">
+            <div className="text-xs font-bold tracking-widest text-[#FF5500] uppercase">
               01 · Panoramic Seating
             </div>
             <h3 className="text-lg font-bold text-white">Rooftop Deck & Balcony</h3>

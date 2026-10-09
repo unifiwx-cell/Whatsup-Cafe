@@ -16,7 +16,7 @@ export function ScrollMarquee() {
   ];
 
   return (
-    <div className="relative py-4 bg-[#D4FF45] text-[#10110F] overflow-hidden select-none border-y border-[#D4FF45]/20 shadow-[0_0_30px_rgba(212,255,69,0.2)]">
+    <div className="relative py-4 bg-[#FF5500] text-white overflow-hidden select-none border-y border-[#FF5500]/30 shadow-[0_0_30px_rgba(255,85,0,0.25)]">
       <motion.div
         animate={{ x: ['0%', '-50%'] }}
         transition={{
@@ -28,9 +28,9 @@ export function ScrollMarquee() {
       >
         {/* Doubled list for seamless infinite loop */}
         {[...marqueeItems, ...marqueeItems, ...marqueeItems, ...marqueeItems].map((item, idx) => (
-          <div key={idx} className="flex items-center gap-8 text-xs sm:text-sm font-black tracking-widest uppercase">
+          <div key={idx} className="flex items-center gap-8 text-xs sm:text-sm font-black tracking-widest uppercase text-white">
             <span>{item}</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-[#10110F]/40" />
+            <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
           </div>
         ))}
       </motion.div>

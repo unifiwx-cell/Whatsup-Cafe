@@ -39,7 +39,7 @@ export function MenuSection({ onOpenOrder, onOpenReservation }: MenuSectionProps
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
           <div className="space-y-3 max-w-2xl">
-            <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.2em] text-[#D4FF45]">
+            <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.2em] text-[#FF5500]">
               <UtensilsCrossed className="w-3.5 h-3.5" />
               <span>Culinary Selection · হোয়াটসআপ মেনু</span>
             </div>
@@ -62,15 +62,15 @@ export function MenuSection({ onOpenOrder, onOpenReservation }: MenuSectionProps
               href={CAFE_INFO.officialWebsite}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2.5 text-xs font-semibold tracking-wider uppercase text-white/90 border border-white/20 hover:border-[#D4FF45] hover:text-[#D4FF45] transition-colors rounded-sm flex items-center gap-1.5"
+              className="px-4 py-2.5 text-xs font-semibold tracking-wider uppercase text-white/90 border border-white/20 hover:border-[#FF5500] hover:text-[#FF5500] transition-colors rounded-sm flex items-center gap-1.5"
             >
               <span>View Full Menu</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-[#D4FF45]" />
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#FF5500]" />
             </a>
             <button
               type="button"
               onClick={onOpenOrder}
-              className="px-5 py-2.5 text-xs font-bold tracking-wider uppercase text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] transition-colors rounded-sm"
+              className="px-5 py-2.5 text-xs font-bold tracking-wider uppercase text-white bg-[#FF5500] hover:bg-[#e64a00] transition-colors rounded-sm shadow-[0_0_15px_rgba(255,85,0,0.3)] cursor-pointer"
             >
               Order Online
             </button>
@@ -88,7 +88,7 @@ export function MenuSection({ onOpenOrder, onOpenReservation }: MenuSectionProps
                 onClick={() => setActiveCategory(category)}
                 className={`px-4 py-2 text-xs font-semibold tracking-wide uppercase whitespace-nowrap rounded-sm transition-all cursor-pointer ${
                   activeCategory === category
-                    ? 'bg-[#D4FF45] text-[#10110F] shadow-[0_0_15px_rgba(212,255,69,0.25)]'
+                    ? 'bg-[#FF5500] text-white shadow-[0_0_15px_rgba(255,85,0,0.35)]'
                     : 'text-white/70 hover:text-white hover:bg-white/5'
                 }`}
               >
@@ -105,7 +105,7 @@ export function MenuSection({ onOpenOrder, onOpenReservation }: MenuSectionProps
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search dishes, pasta, kebabs..."
-              className="w-full bg-[#1B1D19] border border-white/15 focus:border-[#D4FF45] focus:outline-none text-white text-xs py-2 pl-9 pr-3 rounded-sm placeholder:text-white/35 transition-colors"
+              className="w-full bg-[#1B1D19] border border-white/15 focus:border-[#FF5500] focus:outline-none text-white text-xs py-2 pl-9 pr-3 rounded-sm placeholder:text-white/35 transition-colors"
             />
             {searchQuery && (
               <button
@@ -133,7 +133,7 @@ export function MenuSection({ onOpenOrder, onOpenReservation }: MenuSectionProps
                     setActiveCategory('All');
                     setSearchQuery('');
                   }}
-                  className="mt-3 text-xs text-[#D4FF45] underline uppercase tracking-wider font-semibold"
+                  className="mt-3 text-xs text-[#FF5500] underline uppercase tracking-wider font-semibold cursor-pointer"
                 >
                   Reset all filters
                 </button>
@@ -145,7 +145,7 @@ export function MenuSection({ onOpenOrder, onOpenReservation }: MenuSectionProps
                   onClick={() => setSelectedItem(item)}
                   className={`group relative p-4 rounded-sm border transition-all cursor-pointer flex flex-col justify-between ${
                     selectedItem?.id === item.id
-                      ? 'bg-[#1B1D19] border-[#D4FF45]/60 shadow-[0_0_20px_rgba(212,255,69,0.1)]'
+                      ? 'bg-[#1B1D19] border-[#FF5500]/70 shadow-[0_0_20px_rgba(255,85,0,0.15)]'
                       : 'bg-[#161714] border-white/10 hover:border-white/25 hover:bg-[#1B1D19]'
                   }`}
                 >
@@ -171,7 +171,7 @@ export function MenuSection({ onOpenOrder, onOpenReservation }: MenuSectionProps
 
                     {/* Dish Title */}
                     <div>
-                      <h3 className="font-bold text-base text-white group-hover:text-[#D4FF45] transition-colors">
+                      <h3 className="font-bold text-base text-white group-hover:text-[#FF5500] transition-colors">
                         {item.name}
                       </h3>
                       {item.bengaliName && (
@@ -198,7 +198,7 @@ export function MenuSection({ onOpenOrder, onOpenReservation }: MenuSectionProps
                         e.stopPropagation();
                         onOpenOrder();
                       }}
-                      className="text-[11px] uppercase tracking-wider font-semibold text-[#D4FF45] hover:text-white transition-colors"
+                      className="text-[11px] uppercase tracking-wider font-semibold text-[#FF5500] hover:text-white transition-colors cursor-pointer"
                     >
                       Order →
                     </button>
@@ -212,7 +212,7 @@ export function MenuSection({ onOpenOrder, onOpenReservation }: MenuSectionProps
           <div className="hidden lg:block lg:col-span-4 sticky top-24">
             {selectedItem && (
               <div className="bg-[#1B1D19] border border-white/15 rounded-sm p-5 space-y-4 shadow-2xl">
-                <div className="text-[11px] uppercase tracking-[0.2em] text-[#D4FF45] font-bold flex items-center justify-between">
+                <div className="text-[11px] uppercase tracking-[0.2em] text-[#FF5500] font-bold flex items-center justify-between">
                   <span>Chef's Spotlight</span>
                   <span className="font-mono text-white/50">#{selectedItem.id}</span>
                 </div>
@@ -271,14 +271,14 @@ export function MenuSection({ onOpenOrder, onOpenReservation }: MenuSectionProps
                   <button
                     type="button"
                     onClick={onOpenOrder}
-                    className="py-2.5 text-xs font-bold uppercase tracking-wider text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] rounded-sm transition-colors text-center"
+                    className="py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-[#FF5500] hover:bg-[#e64a00] rounded-sm transition-colors text-center cursor-pointer shadow-md"
                   >
                     Order Now
                   </button>
                   <button
                     type="button"
                     onClick={onOpenReservation}
-                    className="py-2.5 text-xs font-semibold uppercase tracking-wider text-white border border-white/20 hover:border-[#D4FF45] rounded-sm transition-colors text-center"
+                    className="py-2.5 text-xs font-semibold uppercase tracking-wider text-white border border-white/20 hover:border-[#FF5500] rounded-sm transition-colors text-center cursor-pointer"
                   >
                     Dine In
                   </button>

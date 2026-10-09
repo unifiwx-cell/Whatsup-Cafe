@@ -33,7 +33,7 @@ export function Hero({ onOpenReservation, onExploreMenu }: HeroProps) {
         className="absolute inset-0 z-0 origin-center pointer-events-none will-change-transform"
       >
         <img
-          src="/src/assets/images/whatsup_hero_rooftop_1791547809865.jpg"
+          src="/images/hero_rooftop.jpg"
           alt="WhatsUp Cafe Southern Avenue Kolkata Rooftop Lounge at Night"
           className="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.08]"
           referrerPolicy="no-referrer"
@@ -57,7 +57,7 @@ export function Hero({ onOpenReservation, onExploreMenu }: HeroProps) {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-white/80 font-medium tracking-widest uppercase mb-4"
           >
-            <span className="text-[#D4FF45] flex items-center gap-1.5 font-bold">
+            <span className="text-[#FF5500] flex items-center gap-1.5 font-bold">
               <MapPin className="w-3.5 h-3.5" />
               SOUTHERN AVENUE
             </span>
@@ -80,7 +80,7 @@ export function Hero({ onOpenReservation, onExploreMenu }: HeroProps) {
               <img
                 src="/logo.png"
                 alt="WhatsUp Cafe Logo"
-                className="h-14 sm:h-20 md:h-24 lg:h-28 w-auto object-contain filter drop-shadow-[0_8px_36px_rgba(212,255,69,0.35)] brightness-110"
+                className="h-14 sm:h-20 md:h-24 lg:h-28 w-auto object-contain filter drop-shadow-[0_8px_36px_rgba(255,85,0,0.35)] brightness-110"
               />
               <div className="font-bengali text-sm sm:text-base text-[#D9A35D] font-semibold mt-1 tracking-normal">
                 {CAFE_INFO.bengaliName} · রুফটপ লাউঞ্জ অ্যান্ড ক্যাফে
@@ -100,7 +100,7 @@ export function Hero({ onOpenReservation, onExploreMenu }: HeroProps) {
             <span className="font-serif-luxury italic font-normal text-[#F6F2E9] tracking-normal">
               LET'S GO
             </span>{' '}
-            <span className="text-[#D4FF45]">OUT.</span>
+            <span className="text-[#FF5500]">OUT.</span>
           </motion.h1>
 
           {/* Supporting Text */}
@@ -123,7 +123,7 @@ export function Hero({ onOpenReservation, onExploreMenu }: HeroProps) {
             <button
               type="button"
               onClick={onExploreMenu}
-              className="px-6 sm:px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-bold tracking-wider uppercase text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] transition-all rounded-sm flex items-center gap-2 shadow-[0_0_30px_rgba(212,255,69,0.35)] hover:shadow-[0_0_40px_rgba(212,255,69,0.55)] cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+              className="px-6 sm:px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-bold tracking-wider uppercase text-white bg-[#FF5500] hover:bg-[#e64a00] transition-all rounded-sm flex items-center gap-2 shadow-[0_0_30px_rgba(255,85,0,0.35)] hover:shadow-[0_0_40px_rgba(255,85,0,0.55)] cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
             >
               <span>Explore The Menu</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -132,7 +132,7 @@ export function Hero({ onOpenReservation, onExploreMenu }: HeroProps) {
             <button
               type="button"
               onClick={onOpenReservation}
-              className="px-6 sm:px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-semibold tracking-wider uppercase text-[#F6F2E9] border border-white/30 hover:border-[#D4FF45] hover:text-[#D4FF45] bg-black/40 backdrop-blur-sm transition-all rounded-sm cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+              className="px-6 sm:px-8 py-3.5 sm:py-4 text-xs sm:text-sm font-semibold tracking-wider uppercase text-[#F6F2E9] border border-white/30 hover:border-[#FF5500] hover:text-[#FF5500] bg-black/40 backdrop-blur-sm transition-all rounded-sm cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
             >
               Book Your Table
             </button>
@@ -153,7 +153,7 @@ export function Hero({ onOpenReservation, onExploreMenu }: HeroProps) {
             </div>
             <span className="text-white/30 hidden sm:inline" aria-hidden="true">·</span>
             <div className="flex items-center gap-1.5 text-white/70">
-              <Clock className="w-3.5 h-3.5 text-[#D4FF45]" />
+              <Clock className="w-3.5 h-3.5 text-[#FF5500]" />
               <span>Open Daily: 12:00 PM – 12:30 AM</span>
             </div>
             <span className="text-white/30 hidden sm:inline" aria-hidden="true">·</span>
@@ -175,7 +175,7 @@ export function Hero({ onOpenReservation, onExploreMenu }: HeroProps) {
         <span className="text-[10px] uppercase font-bold tracking-[0.25em] text-white/60">
           Scroll Into The Vibe
         </span>
-        <ChevronDown className="w-4 h-4 text-[#D4FF45]" />
+        <ChevronDown className="w-4 h-4 text-[#FF5500]" />
       </motion.div>
     </section>
   );

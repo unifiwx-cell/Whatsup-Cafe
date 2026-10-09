@@ -61,10 +61,10 @@ export function Navbar({ onOpenReservation, onOpenOrder }: NavbarProps) {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="relative py-1 text-white/80 hover:text-[#D4FF45] transition-colors whitespace-nowrap shrink-0 group"
+                  className="relative py-1 text-white/80 hover:text-[#FF5500] transition-colors whitespace-nowrap shrink-0 group"
                 >
                   {link.label}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D4FF45] transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FF5500] transition-all duration-300 group-hover:w-full" />
                 </a>
               ))}
             </nav>
@@ -74,14 +74,14 @@ export function Navbar({ onOpenReservation, onOpenOrder }: NavbarProps) {
               <button
                 type="button"
                 onClick={onOpenOrder}
-                className="px-3.5 py-2 text-xs font-semibold tracking-wider uppercase text-white/90 hover:text-[#D4FF45] transition-colors whitespace-nowrap shrink-0"
+                className="px-3.5 py-2 text-xs font-semibold tracking-wider uppercase text-white/90 hover:text-[#FF5500] transition-colors whitespace-nowrap shrink-0"
               >
                 Order Online
               </button>
               <button
                 type="button"
                 onClick={onOpenReservation}
-                className="px-5 py-2.5 text-xs font-bold tracking-wider uppercase text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] transition-all rounded-sm shadow-[0_0_20px_rgba(212,255,69,0.3)] hover:shadow-[0_0_28px_rgba(212,255,69,0.5)] whitespace-nowrap shrink-0"
+                className="px-5 py-2.5 text-xs font-bold tracking-wider uppercase text-white bg-[#FF5500] hover:bg-[#e64a00] transition-all rounded-sm shadow-[0_0_20px_rgba(255,85,0,0.35)] hover:shadow-[0_0_28px_rgba(255,85,0,0.55)] whitespace-nowrap shrink-0 cursor-pointer"
               >
                 Reserve a Table
               </button>
@@ -92,14 +92,14 @@ export function Navbar({ onOpenReservation, onOpenOrder }: NavbarProps) {
               <button
                 type="button"
                 onClick={onOpenReservation}
-                className="px-3 py-1.5 text-xs font-bold uppercase text-[#10110F] bg-[#D4FF45] rounded-sm whitespace-nowrap"
+                className="px-3 py-1.5 text-xs font-bold uppercase text-white bg-[#FF5500] rounded-sm whitespace-nowrap"
               >
                 Book
               </button>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 text-white/90 hover:text-[#D4FF45] transition-colors focus:outline-none"
+                className="p-2 text-white/90 hover:text-[#FF5500] transition-colors focus:outline-none"
                 aria-label={mobileMenuOpen ? 'Close Menu' : 'Open Menu'}
               >
                 {mobileMenuOpen ? <X className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}
@@ -108,9 +108,9 @@ export function Navbar({ onOpenReservation, onOpenOrder }: NavbarProps) {
           </div>
         </div>
 
-        {/* Subtle Lime Accent Line when scrolled */}
+        {/* Subtle Orange Accent Line when scrolled */}
         {isScrolled && (
-          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4FF45]/40 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#FF5500]/50 to-transparent" />
         )}
       </header>
 
@@ -132,7 +132,7 @@ export function Navbar({ onOpenReservation, onOpenOrder }: NavbarProps) {
                 <div className="font-bengali text-xs text-[#D9A35D] mt-1">{CAFE_INFO.bengaliName}</div>
               </div>
               <div className="text-[11px] text-white/60 flex items-center gap-1.5 font-mono">
-                <MapPin className="w-3.5 h-3.5 text-[#D4FF45]" />
+                <MapPin className="w-3.5 h-3.5 text-[#FF5500]" />
                 Southern Ave
               </div>
             </div>
@@ -143,7 +143,7 @@ export function Navbar({ onOpenReservation, onOpenOrder }: NavbarProps) {
                   key={link.label}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-lg font-medium text-white/90 hover:text-[#D4FF45] transition-colors py-1 flex items-center justify-between"
+                  className="text-lg font-medium text-white/90 hover:text-[#FF5500] transition-colors py-1 flex items-center justify-between"
                 >
                   <span>{link.label}</span>
                   <span className="text-xs text-white/30 font-mono">↗</span>
@@ -159,7 +159,7 @@ export function Navbar({ onOpenReservation, onOpenOrder }: NavbarProps) {
                 setMobileMenuOpen(false);
                 onOpenReservation();
               }}
-              className="w-full py-3 text-center text-sm font-bold uppercase tracking-wider text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] rounded-sm flex items-center justify-center gap-2"
+              className="w-full py-3 text-center text-sm font-bold uppercase tracking-wider text-white bg-[#FF5500] hover:bg-[#e64a00] rounded-sm flex items-center justify-center gap-2"
             >
               <Calendar className="w-4 h-4" />
               Reserve a Table
@@ -171,7 +171,7 @@ export function Navbar({ onOpenReservation, onOpenOrder }: NavbarProps) {
                   setMobileMenuOpen(false);
                   onOpenOrder();
                 }}
-                className="py-2.5 text-center text-xs font-semibold uppercase tracking-wider text-white border border-white/20 rounded-sm hover:border-[#D4FF45]"
+                className="py-2.5 text-center text-xs font-semibold uppercase tracking-wider text-white border border-white/20 rounded-sm hover:border-[#FF5500]"
               >
                 Order Online
               </button>
@@ -179,7 +179,7 @@ export function Navbar({ onOpenReservation, onOpenOrder }: NavbarProps) {
                 href={`tel:${CAFE_INFO.phoneRaw}`}
                 className="py-2.5 text-center text-xs font-semibold uppercase tracking-wider text-white bg-white/10 rounded-sm hover:bg-white/20 flex items-center justify-center gap-1.5"
               >
-                <Phone className="w-3.5 h-3.5 text-[#D4FF45]" />
+                <Phone className="w-3.5 h-3.5 text-[#FF5500]" />
                 Call Cafe
               </a>
             </div>

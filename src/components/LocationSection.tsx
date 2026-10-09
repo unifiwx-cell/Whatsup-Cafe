@@ -12,7 +12,7 @@ export function LocationSection({ onOpenReservation }: LocationSectionProps) {
         
         {/* Section Heading */}
         <div className="max-w-2xl mb-14 space-y-3">
-          <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.2em] text-[#D4FF45]">
+          <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.2em] text-[#FF5500]">
             <Compass className="w-3.5 h-3.5" />
             <span>Visit Us · পৌঁছানোর ঠিকানা</span>
           </div>
@@ -40,7 +40,7 @@ export function LocationSection({ onOpenReservation }: LocationSectionProps) {
               
               {/* Address Block */}
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#D4FF45]">
+                <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#FF5500]">
                   <MapPin className="w-4 h-4" />
                   <span>Exact Address</span>
                 </div>
@@ -54,13 +54,13 @@ export function LocationSection({ onOpenReservation }: LocationSectionProps) {
 
               {/* Operating Hours */}
               <div className="space-y-2 pt-4 border-t border-white/10">
-                <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#D4FF45]">
+                <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#FF5500]">
                   <Clock className="w-4 h-4" />
                   <span>Operating Hours</span>
                 </div>
                 <div className="text-sm text-white font-medium flex items-center justify-between">
                   <span>Monday – Sunday</span>
-                  <span className="font-mono text-[#D4FF45] font-bold">{CAFE_INFO.openingHours}</span>
+                  <span className="font-mono text-[#FF5500] font-bold">{CAFE_INFO.openingHours}</span>
                 </div>
                 <div className="text-xs text-white/50">
                   Kitchen orders open till midnight · Late-night dessert and drinks
@@ -99,7 +99,7 @@ export function LocationSection({ onOpenReservation }: LocationSectionProps) {
                   href={CAFE_INFO.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-3.5 text-xs font-bold uppercase tracking-wider text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] rounded-sm transition-colors flex items-center justify-center gap-2"
+                  className="px-5 py-3.5 text-xs font-bold uppercase tracking-wider text-white bg-[#FF5500] hover:bg-[#e64a00] rounded-sm transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-md"
                 >
                   <Navigation className="w-4 h-4" />
                   Get Directions
@@ -107,9 +107,9 @@ export function LocationSection({ onOpenReservation }: LocationSectionProps) {
 
                 <a
                   href={`tel:${CAFE_INFO.phoneRaw}`}
-                  className="px-5 py-3.5 text-xs font-bold uppercase tracking-wider text-white border border-white/20 hover:border-[#D4FF45] rounded-sm transition-colors flex items-center justify-center gap-2"
+                  className="px-5 py-3.5 text-xs font-bold uppercase tracking-wider text-white border border-white/20 hover:border-[#FF5500] hover:text-[#FF5500] rounded-sm transition-colors flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <Phone className="w-4 h-4 text-[#D4FF45]" />
+                  <Phone className="w-4 h-4 text-[#FF5500]" />
                   Call: {CAFE_INFO.phone}
                 </a>
               </div>
@@ -117,7 +117,7 @@ export function LocationSection({ onOpenReservation }: LocationSectionProps) {
               <button
                 type="button"
                 onClick={onOpenReservation}
-                className="w-full py-3 text-xs font-semibold uppercase tracking-wider text-white/80 hover:text-white bg-white/5 hover:bg-white/10 rounded-sm transition-colors"
+                className="w-full py-3 text-xs font-semibold uppercase tracking-wider text-white/80 hover:text-white bg-white/5 hover:bg-white/10 rounded-sm transition-colors cursor-pointer"
               >
                 Reserve Table In Advance →
               </button>
@@ -130,7 +130,7 @@ export function LocationSection({ onOpenReservation }: LocationSectionProps) {
             {/* Real Venue Rooftop Photo */}
             <div className="relative h-64 sm:h-72 rounded-sm overflow-hidden border border-white/15 bg-neutral-900 shadow-xl">
               <img
-                src="/src/assets/images/whatsup_hero_rooftop_1791547809865.jpg"
+                src="/images/hero_rooftop.jpg"
                 alt="WhatsUp Cafe Entrance and Rooftop, Southern Avenue Kolkata"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -138,7 +138,7 @@ export function LocationSection({ onOpenReservation }: LocationSectionProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-white">
                 <span className="font-semibold">Rooftop Entrance · Gate 2, 122/A</span>
-                <span className="text-[#D4FF45] font-mono">Opp. Nazrul Manch</span>
+                <span className="text-[#FF5500] font-mono">Opp. Nazrul Manch</span>
               </div>
             </div>
 
@@ -146,7 +146,7 @@ export function LocationSection({ onOpenReservation }: LocationSectionProps) {
             <div className="relative flex-1 min-h-[220px] rounded-sm overflow-hidden border border-white/15 bg-[#1B1D19] p-6 flex flex-col justify-between">
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono uppercase tracking-wider text-[#D4FF45]">
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#FF5500]">
                     Google Maps Pin
                   </span>
                   <span className="text-xs font-mono text-white/40">22.5115° N, 88.3582° E</span>
@@ -167,7 +167,7 @@ export function LocationSection({ onOpenReservation }: LocationSectionProps) {
                   href={CAFE_INFO.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#10110F] bg-white hover:bg-[#D4FF45] transition-colors rounded-sm"
+                  className="px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#10110F] bg-white hover:bg-[#FF5500] hover:text-white transition-colors rounded-sm cursor-pointer"
                 >
                   Open Maps ↗
                 </a>

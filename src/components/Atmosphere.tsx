@@ -11,7 +11,7 @@ export function Atmosphere({ onOpenReservation }: AtmosphereProps) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-[#D4FF45]">
+          <div className="inline-flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-[#FF5500]">
             <Sparkles className="w-3.5 h-3.5" />
             <span>The Social Atmosphere · আড্ডা ও স্মৃতি</span>
           </div>
@@ -37,7 +37,7 @@ export function Atmosphere({ onOpenReservation }: AtmosphereProps) {
           <div className="group bg-[#161714] border border-white/10 hover:border-white/30 rounded-sm overflow-hidden transition-all duration-300 flex flex-col justify-between">
             <div className="relative aspect-[4/3] overflow-hidden bg-neutral-900">
               <img
-                src="/src/assets/images/whatsup_rooftop_sunset_1791547875878.jpg"
+                src="/images/rooftop_sunset.jpg"
                 alt="Romantic rooftop evening at WhatsUp Cafe"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
@@ -48,7 +48,7 @@ export function Atmosphere({ onOpenReservation }: AtmosphereProps) {
               </div>
             </div>
             <div className="p-6 space-y-2">
-              <h3 className="text-xl font-bold text-white group-hover:text-[#D4FF45] transition-colors">
+              <h3 className="text-xl font-bold text-white group-hover:text-[#FF5500] transition-colors">
                 Dates & Sunset Cocktails
               </h3>
               <p className="text-xs text-white/70 leading-relaxed">
@@ -64,18 +64,18 @@ export function Atmosphere({ onOpenReservation }: AtmosphereProps) {
           <div className="group bg-[#161714] border border-white/10 hover:border-white/30 rounded-sm overflow-hidden transition-all duration-300 flex flex-col justify-between">
             <div className="relative aspect-[4/3] overflow-hidden bg-neutral-900">
               <img
-                src="/src/assets/images/whatsup_intro_lifestyle_1791547826311.jpg"
+                src="/images/intro_lifestyle.jpg"
                 alt="Friends sharing kebabs and laughter at WhatsUp Cafe"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-xs text-white/90 px-2.5 py-1 text-[11px] font-mono rounded-xs border border-white/15 flex items-center gap-1.5">
-                <Users className="w-3 h-3 text-[#D4FF45]" />
+                <Users className="w-3 h-3 text-[#FF5500]" />
                 Group Celebrations
               </div>
             </div>
             <div className="p-6 space-y-2">
-              <h3 className="text-xl font-bold text-white group-hover:text-[#D4FF45] transition-colors">
+              <h3 className="text-xl font-bold text-white group-hover:text-[#FF5500] transition-colors">
                 Kolkata Adda & Reunions
               </h3>
               <p className="text-xs text-white/70 leading-relaxed">
@@ -91,7 +91,7 @@ export function Atmosphere({ onOpenReservation }: AtmosphereProps) {
           <div className="group bg-[#161714] border border-white/10 hover:border-white/30 rounded-sm overflow-hidden transition-all duration-300 flex flex-col justify-between">
             <div className="relative aspect-[4/3] overflow-hidden bg-neutral-900">
               <img
-                src="/src/assets/images/whatsup_hero_rooftop_1791547809865.jpg"
+                src="/images/hero_rooftop.jpg"
                 alt="Live music and rooftop vibes at WhatsUp Cafe"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
@@ -102,7 +102,7 @@ export function Atmosphere({ onOpenReservation }: AtmosphereProps) {
               </div>
             </div>
             <div className="p-6 space-y-2">
-              <h3 className="text-xl font-bold text-white group-hover:text-[#D4FF45] transition-colors">
+              <h3 className="text-xl font-bold text-white group-hover:text-[#FF5500] transition-colors">
                 Acoustic Sets & City Sounds
               </h3>
               <p className="text-xs text-white/70 leading-relaxed">
@@ -127,7 +127,7 @@ export function Atmosphere({ onOpenReservation }: AtmosphereProps) {
           <button
             type="button"
             onClick={onOpenReservation}
-            className="px-6 py-3 text-xs font-bold uppercase tracking-wider text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] rounded-sm transition-colors whitespace-nowrap"
+            className="px-6 py-3 text-xs font-bold uppercase tracking-wider text-white bg-[#FF5500] hover:bg-[#e64a00] rounded-sm transition-colors whitespace-nowrap cursor-pointer shadow-md"
           >
             Book Table in Advance
           </button>

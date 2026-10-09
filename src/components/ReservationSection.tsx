@@ -11,17 +11,20 @@ export function ReservationSection({ onOpenReservation, onOpenOrder }: Reservati
       {/* Background Rooftop Photography with Dark Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/whatsup_hero_rooftop_1791547809865.jpg"
+          src="/images/hero_rooftop.jpg"
           alt="WhatsUp Cafe Rooftop Dining Table Kolkata"
           className="w-full h-full object-cover filter brightness-[0.35] contrast-[1.1]"
           referrerPolicy="no-referrer"
+          onError={(e) => {
+            e.currentTarget.src = '/images/rooftop_sunset.jpg';
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#10110F] via-black/40 to-[#10110F]" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
         
-        <div className="inline-flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-[#D4FF45]">
+        <div className="inline-flex items-center gap-2 text-xs uppercase font-bold tracking-[0.25em] text-[#FF5500]">
           <Sparkles className="w-3.5 h-3.5" />
           <span>Southern Avenue Rooftop Experience</span>
         </div>
@@ -29,7 +32,7 @@ export function ReservationSection({ onOpenReservation, onOpenOrder }: Reservati
         <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight leading-[0.98]">
           YOUR TABLE.
           <br />
-          <span className="font-serif-luxury italic font-normal text-[#D4FF45]">
+          <span className="font-serif-luxury italic font-normal text-[#FF5500]">
             YOUR PEOPLE.
           </span>
           <br />
@@ -44,7 +47,7 @@ export function ReservationSection({ onOpenReservation, onOpenOrder }: Reservati
           <button
             type="button"
             onClick={onOpenReservation}
-            className="px-8 py-4 text-xs sm:text-sm font-bold tracking-wider uppercase text-[#10110F] bg-[#D4FF45] hover:bg-[#bce438] transition-all rounded-sm flex items-center gap-2 shadow-[0_0_35px_rgba(212,255,69,0.4)] hover:shadow-[0_0_50px_rgba(212,255,69,0.6)] cursor-pointer"
+            className="px-8 py-4 text-xs sm:text-sm font-bold tracking-wider uppercase text-white bg-[#FF5500] hover:bg-[#e64a00] transition-all rounded-sm flex items-center gap-2 shadow-[0_0_35px_rgba(255,85,0,0.4)] hover:shadow-[0_0_50px_rgba(255,85,0,0.6)] cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
           >
             <Calendar className="w-4 h-4" />
             <span>Reserve A Table</span>
@@ -53,7 +56,7 @@ export function ReservationSection({ onOpenReservation, onOpenOrder }: Reservati
           <button
             type="button"
             onClick={onOpenOrder}
-            className="px-8 py-4 text-xs sm:text-sm font-semibold tracking-wider uppercase text-white border border-white/30 hover:border-[#D4FF45] hover:text-[#D4FF45] bg-black/50 backdrop-blur-sm transition-all rounded-sm flex items-center gap-2 cursor-pointer"
+            className="px-8 py-4 text-xs sm:text-sm font-semibold tracking-wider uppercase text-white border border-white/30 hover:border-[#FF5500] hover:text-[#FF5500] bg-black/50 backdrop-blur-sm transition-all rounded-sm flex items-center gap-2 cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
           >
             <span>Order Online</span>
             <ArrowUpRight className="w-4 h-4" />

@@ -43,7 +43,7 @@ export const MENU_ITEMS: MenuItem[] = [
     isPopular: true,
     isChefSpecial: true,
     diet: 'non-veg',
-    imageUrl: '/src/assets/images/whatsup_kebab_platter_1791547839333.jpg',
+    imageUrl: '/images/kebab_platter.jpg',
     tags: ['Signature', 'Tandoor Hot', 'Crowd Favorite'],
   },
   {
@@ -55,7 +55,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 495,
     isPopular: true,
     diet: 'non-veg',
-    imageUrl: '/src/assets/images/whatsup_chicken_roulade_1791551239437.jpg',
+    imageUrl: '/images/chicken_roulade.jpg',
     tags: ['Continental', 'Chef Choice'],
   },
   {
@@ -67,7 +67,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 425,
     isPopular: true,
     diet: 'veg',
-    imageUrl: '/src/assets/images/whatsup_aglio_olio_1791547852025.jpg',
+    imageUrl: '/images/aglio_olio.jpg',
     tags: ['Italian Classic', 'Garlic Infused'],
   },
   {
@@ -79,7 +79,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 485,
     isPopular: true,
     diet: 'non-veg',
-    imageUrl: '/src/assets/images/whatsup_kebab_platter_1791547839333.jpg',
+    imageUrl: '/images/kebab_platter.jpg',
     tags: ['Smoky Charcoal', 'Authentic'],
   },
   {
@@ -91,7 +91,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 520,
     isPopular: true,
     diet: 'veg',
-    imageUrl: '/src/assets/images/whatsup_woodfired_pizza_1791551226978.jpg',
+    imageUrl: '/images/woodfired_pizza.jpg',
     tags: ['Sourdough', 'Stone Oven'],
   },
   {
@@ -102,7 +102,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Golden fried sweet corn kernels tossed with crushed Sichuan peppercorns, scallions, diced bell peppers, and garlic butter.',
     price: 345,
     diet: 'veg',
-    imageUrl: '/src/assets/images/whatsup_intro_lifestyle_1791547826311.jpg',
+    imageUrl: '/images/intro_lifestyle.jpg',
     tags: ['Bar Nibbles', 'Crunchy'],
   },
   {
@@ -113,7 +113,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Double-fried crispy chicken wings glazed in fiery bird’s eye chili sauce, served with cooling garlic ranch dip.',
     price: 410,
     diet: 'non-veg',
-    imageUrl: '/src/assets/images/whatsup_kebab_platter_1791547839333.jpg',
+    imageUrl: '/images/kebab_platter.jpg',
     tags: ['Spicy', 'Finger Food'],
   },
   {
@@ -125,7 +125,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 540,
     isChefSpecial: true,
     diet: 'non-veg',
-    imageUrl: '/src/assets/images/whatsup_aglio_olio_1791547852025.jpg',
+    imageUrl: '/images/chicken_roulade.jpg',
     tags: ['Kolkata Special', 'Fresh Catch'],
   },
   {
@@ -137,7 +137,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 295,
     isPopular: true,
     diet: 'veg',
-    imageUrl: '/src/assets/images/whatsup_cocktails_drinks_1791547864350.jpg',
+    imageUrl: '/images/cocktails_drinks.jpg',
     tags: ['Refreshing', 'Top Cocktail'],
   },
   {
@@ -150,7 +150,7 @@ export const MENU_ITEMS: MenuItem[] = [
     isPopular: true,
     isChefSpecial: true,
     diet: 'veg',
-    imageUrl: '/src/assets/images/whatsup_cocktails_drinks_1791547864350.jpg',
+    imageUrl: '/images/cocktails_drinks.jpg',
     tags: ['Signature Mixology', 'Tiki Classic'],
   },
   {
@@ -162,7 +162,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 360,
     isPopular: true,
     diet: 'veg',
-    imageUrl: '/src/assets/images/whatsup_sizzling_brownie_1791551254039.jpg',
+    imageUrl: '/images/sizzling_brownie.jpg',
     tags: ['Decadent', 'Hot & Cold'],
   },
   {
@@ -173,7 +173,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Savoiardi ladyfingers soaked in dark roast espresso and coffee liqueur, layered with mascarpone mousse and Valrhona cocoa.',
     price: 380,
     diet: 'veg',
-    imageUrl: '/src/assets/images/whatsup_intro_lifestyle_1791547826311.jpg',
+    imageUrl: '/images/sizzling_brownie.jpg',
     tags: ['Italian Dessert', 'Rich & Creamy'],
   },
 ];
@@ -232,41 +232,41 @@ export const GALLERY_HIGHLIGHTS = [
     title: 'Non-Veg Kebab Platter',
     category: 'Tandoor Grill',
     description: 'Charcoal-charred chicken tikka, mutton seekh kebabs, zesty mint dip, and lime.',
-    image: '/src/assets/images/whatsup_kebab_platter_1791547839333.jpg',
+    image: '/images/kebab_platter.jpg',
   },
   {
     number: '02',
     title: 'Spaghetti Aglio e Olio',
     category: 'Artisanal Pasta',
     description: 'Tossed in toasted garlic slivers, spicy peperoncino, and golden cold-pressed EVOO.',
-    image: '/src/assets/images/whatsup_aglio_olio_1791547852025.jpg',
+    image: '/images/aglio_olio.jpg',
   },
   {
     number: '03',
     title: 'Chicken Roulade',
     category: 'Continental Mains',
     description: 'Spinach and mushroom stuffed chicken breast with creamy velouté and potato purée.',
-    image: '/src/assets/images/whatsup_chicken_roulade_1791551239437.jpg',
+    image: '/images/chicken_roulade.jpg',
   },
   {
     number: '04',
     title: 'Woodfired Sourdough Pizza',
     category: 'Stone Oven',
     description: 'Bubbly blistered sourdough crust with bocconcini, San Marzano reduction, and basil.',
-    image: '/src/assets/images/whatsup_woodfired_pizza_1791551226978.jpg',
+    image: '/images/woodfired_pizza.jpg',
   },
   {
     number: '05',
     title: 'Sizzling Chocolate Brownie',
     category: 'Hot & Cold Dessert',
     description: 'Cast-iron skillet fudge brownie, vanilla gelato, and cascading hot chocolate fudge.',
-    image: '/src/assets/images/whatsup_sizzling_brownie_1791551254039.jpg',
+    image: '/images/sizzling_brownie.jpg',
   },
   {
     number: '06',
     title: 'Artisanal Mixology',
     category: 'Cocktail Bar',
     description: 'Crystal glasses, crushed ice, hand-plucked mint, and small-batch spirits.',
-    image: '/src/assets/images/whatsup_cocktails_drinks_1791547864350.jpg',
+    image: '/images/cocktails_drinks.jpg',
   },
 ];

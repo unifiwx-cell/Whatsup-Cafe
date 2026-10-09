@@ -27,13 +27,13 @@ export function FoodSliderReel({ onOpenOrder, onOpenReservation }: FoodSliderRee
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-2">
-            <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.2em] text-[#D4FF45]">
+            <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.2em] text-[#FF5500]">
               <Utensils className="w-3.5 h-3.5" />
               <span>Signature Plates in Motion · বিশেষ খাবারের সমাহার</span>
             </div>
             
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-              SLIDING INTO <span className="text-[#D4FF45]">FLAVOUR.</span>
+              SLIDING INTO <span className="text-[#FF5500]">FLAVOUR.</span>
             </h2>
             
             <p className="text-xs sm:text-sm text-white/70 max-w-xl">
@@ -46,27 +46,27 @@ export function FoodSliderReel({ onOpenOrder, onOpenReservation }: FoodSliderRee
             <button
               type="button"
               onClick={() => setIsPaused(!isPaused)}
-              className="px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-sm bg-[#1B1D19] border border-white/15 text-white/80 hover:text-white hover:border-[#D4FF45] transition-colors flex items-center gap-1.5 cursor-pointer"
+              className="px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-sm bg-[#1B1D19] border border-white/15 text-white/80 hover:text-white hover:border-[#FF5500] transition-colors flex items-center gap-1.5 cursor-pointer"
               aria-label={isPaused ? 'Resume Sliding' : 'Pause Sliding'}
             >
-              {isPaused ? <Play className="w-3.5 h-3.5 text-[#D4FF45]" /> : <Pause className="w-3.5 h-3.5 text-[#D4FF45]" />}
+              {isPaused ? <Play className="w-3.5 h-3.5 text-[#FF5500]" /> : <Pause className="w-3.5 h-3.5 text-[#FF5500]" />}
               <span>{isPaused ? 'Play' : 'Pause'}</span>
             </button>
 
             <button
               type="button"
               onClick={() => setDirection(direction === 'left-to-right' ? 'right-to-left' : 'left-to-right')}
-              className="px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-sm bg-[#1B1D19] border border-white/15 text-white/80 hover:text-white hover:border-[#D4FF45] transition-colors flex items-center gap-1.5 cursor-pointer"
+              className="px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-sm bg-[#1B1D19] border border-white/15 text-white/80 hover:text-white hover:border-[#FF5500] transition-colors flex items-center gap-1.5 cursor-pointer"
               title="Reverse Slide Direction"
             >
               {direction === 'left-to-right' ? (
                 <>
-                  <ArrowRight className="w-3.5 h-3.5 text-[#D4FF45]" />
+                  <ArrowRight className="w-3.5 h-3.5 text-[#FF5500]" />
                   <span>Left → Right</span>
                 </>
               ) : (
                 <>
-                  <ArrowLeft className="w-3.5 h-3.5 text-[#D4FF45]" />
+                  <ArrowLeft className="w-3.5 h-3.5 text-[#FF5500]" />
                   <span>Right → Left</span>
                 </>
               )}
@@ -97,7 +97,7 @@ export function FoodSliderReel({ onOpenOrder, onOpenReservation }: FoodSliderRee
           {duplicatedItems.map((item, index) => (
             <div
               key={`${item.id}-${index}`}
-              className="group relative flex-none w-[280px] sm:w-[320px] rounded-sm overflow-hidden bg-[#161714] border border-white/10 hover:border-[#D4FF45]/60 hover:shadow-[0_8px_30px_rgba(212,255,69,0.15)] transition-all duration-300 flex flex-col justify-between"
+              className="group relative flex-none w-[280px] sm:w-[320px] rounded-sm overflow-hidden bg-[#161714] border border-white/10 hover:border-[#FF5500]/70 hover:shadow-[0_8px_30px_rgba(255,85,0,0.25)] transition-all duration-300 flex flex-col justify-between"
             >
               {/* Dish Photo */}
               <div className="relative aspect-[4/3] overflow-hidden bg-neutral-900">
@@ -123,12 +123,12 @@ export function FoodSliderReel({ onOpenOrder, onOpenReservation }: FoodSliderRee
                 </div>
 
                 {/* Category Pill */}
-                <div className="absolute top-3 right-3 text-[10px] font-mono uppercase tracking-widest text-[#D4FF45] font-semibold bg-black/75 backdrop-blur-xs px-2 py-0.5 rounded-xs border border-white/10">
+                <div className="absolute top-3 right-3 text-[10px] font-mono uppercase tracking-widest text-[#FF5500] font-semibold bg-black/75 backdrop-blur-xs px-2 py-0.5 rounded-xs border border-white/10">
                   {item.category}
                 </div>
 
                 {/* Price Tag */}
-                <div className="absolute bottom-2.5 right-3 bg-[#D4FF45] text-[#10110F] px-2.5 py-0.5 rounded-xs font-mono font-bold text-xs shadow-md">
+                <div className="absolute bottom-2.5 right-3 bg-[#FF5500] text-white px-2.5 py-0.5 rounded-xs font-mono font-bold text-xs shadow-md">
                   ₹{item.price}
                 </div>
               </div>
@@ -136,7 +136,7 @@ export function FoodSliderReel({ onOpenOrder, onOpenReservation }: FoodSliderRee
               {/* Dish Info */}
               <div className="p-4 sm:p-5 space-y-2 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-bold text-base text-white group-hover:text-[#D4FF45] transition-colors leading-snug">
+                  <h3 className="font-bold text-base text-white group-hover:text-[#FF5500] transition-colors leading-snug">
                     {item.name}
                   </h3>
                   {item.bengaliName && (
@@ -157,7 +157,7 @@ export function FoodSliderReel({ onOpenOrder, onOpenReservation }: FoodSliderRee
                       e.stopPropagation();
                       onOpenOrder();
                     }}
-                    className="text-xs font-bold uppercase tracking-wider text-[#D4FF45] hover:text-white transition-colors"
+                    className="text-xs font-bold uppercase tracking-wider text-[#FF5500] hover:text-white transition-colors cursor-pointer"
                   >
                     Order Doorstep →
                   </button>
@@ -168,7 +168,7 @@ export function FoodSliderReel({ onOpenOrder, onOpenReservation }: FoodSliderRee
                       e.stopPropagation();
                       onOpenReservation();
                     }}
-                    className="text-[11px] font-semibold uppercase tracking-wider text-white/60 hover:text-[#D9A35D] transition-colors"
+                    className="text-[11px] font-semibold uppercase tracking-wider text-white/60 hover:text-[#D9A35D] transition-colors cursor-pointer"
                   >
                     Dine In
                   </button>

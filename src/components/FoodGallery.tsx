@@ -32,7 +32,7 @@ export function FoodGallery() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-3 max-w-2xl">
-            <div className="text-xs uppercase font-bold tracking-[0.2em] text-[#D4FF45]">
+            <div className="text-xs uppercase font-bold tracking-[0.2em] text-[#FF5500]">
               Signature Highlights · স্বাদের অভিযান
             </div>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05] text-white">
@@ -55,7 +55,7 @@ export function FoodGallery() {
               onClick={handlePrev}
               disabled={activeSlide === 0}
               aria-label="Previous Slide"
-              className="p-3 rounded-full border border-white/20 text-white hover:border-[#D4FF45] hover:text-[#D4FF45] disabled:opacity-30 disabled:hover:border-white/20 disabled:hover:text-white transition-colors cursor-pointer"
+              className="p-3 rounded-full border border-white/20 text-white hover:border-[#FF5500] hover:text-[#FF5500] disabled:opacity-30 disabled:hover:border-white/20 disabled:hover:text-white transition-colors cursor-pointer"
             >
               <ArrowLeft className="w-5 h-5" />
             </button>
@@ -64,7 +64,7 @@ export function FoodGallery() {
               onClick={handleNext}
               disabled={activeSlide === GALLERY_HIGHLIGHTS.length - 1}
               aria-label="Next Slide"
-              className="p-3 rounded-full border border-white/20 text-white hover:border-[#D4FF45] hover:text-[#D4FF45] disabled:opacity-30 disabled:hover:border-white/20 disabled:hover:text-white transition-colors cursor-pointer"
+              className="p-3 rounded-full border border-white/20 text-white hover:border-[#FF5500] hover:text-[#FF5500] disabled:opacity-30 disabled:hover:border-white/20 disabled:hover:text-white transition-colors cursor-pointer"
             >
               <ArrowRight className="w-5 h-5" />
             </button>
@@ -98,14 +98,14 @@ export function FoodGallery() {
                   {item.number}
                 </div>
 
-                <div className="absolute top-4 right-4 text-[11px] uppercase tracking-widest text-[#D4FF45] font-semibold bg-black/60 px-2 py-0.5 rounded-sm backdrop-blur-xs">
+                <div className="absolute top-4 right-4 text-[11px] uppercase tracking-widest text-[#FF5500] font-semibold bg-black/60 px-2 py-0.5 rounded-sm backdrop-blur-xs">
                   {item.category}
                 </div>
               </div>
 
               {/* Caption Card */}
               <div className="p-6 space-y-2">
-                <h3 className="text-xl font-bold text-white group-hover:text-[#D4FF45] transition-colors">
+                <h3 className="text-xl font-bold text-white group-hover:text-[#FF5500] transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
@@ -128,7 +128,7 @@ export function FoodGallery() {
               onClick={() => handleScrollTo(i)}
               aria-label={`Go to slide ${i + 1}`}
               className={`h-1 rounded-full transition-all duration-300 ${
-                activeSlide === i ? 'w-10 bg-[#D4FF45]' : 'w-3 bg-white/20 hover:bg-white/40'
+                activeSlide === i ? 'w-10 bg-[#FF5500]' : 'w-3 bg-white/20 hover:bg-white/40'
               }`}
             />
           ))}

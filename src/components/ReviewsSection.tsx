@@ -17,8 +17,8 @@ export function ReviewsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end mb-14">
           
           <div className="lg:col-span-8 space-y-3">
-            <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.2em] text-[#D4FF45]">
-              <Star className="w-3.5 h-3.5 fill-[#D4FF45]" />
+            <div className="flex items-center gap-2 text-xs uppercase font-bold tracking-[0.2em] text-[#FF5500]">
+              <Star className="w-3.5 h-3.5 fill-[#FF5500]" />
               <span>Verified Customer Feedback · অতিথি প্রশংসা</span>
             </div>
 
@@ -49,7 +49,7 @@ export function ReviewsSection() {
               </div>
             </div>
 
-            <div className="text-xs uppercase tracking-widest text-[#D4FF45] font-bold">
+            <div className="text-xs uppercase tracking-widest text-[#FF5500] font-bold">
               11,343 Google Reviews
             </div>
 
@@ -61,7 +61,7 @@ export function ReviewsSection() {
               href={CAFE_INFO.googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs text-white/80 hover:text-[#D4FF45] pt-2 font-medium transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs text-white/80 hover:text-[#FF5500] pt-2 font-medium transition-colors"
             >
               <span>Read all Google Reviews</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
@@ -85,7 +85,7 @@ export function ReviewsSection() {
               onClick={() => setFilterTheme(tab.id)}
               className={`px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-sm transition-all cursor-pointer whitespace-nowrap ${
                 filterTheme === tab.id
-                  ? 'bg-[#D4FF45] text-[#10110F] font-bold'
+                  ? 'bg-[#FF5500] text-white font-bold shadow-md'
                   : 'text-white/60 hover:text-white bg-[#10110F]/60 border border-white/10'
               }`}
             >
@@ -122,7 +122,7 @@ export function ReviewsSection() {
               <div className="pt-4 border-t border-white/10 space-y-1">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-bold text-white">{review.author}</span>
-                  <span className="text-[10px] uppercase tracking-wider text-[#D4FF45] font-mono">
+                  <span className="text-[10px] uppercase tracking-wider text-[#FF5500] font-mono">
                     Local Diner
                   </span>
                 </div>

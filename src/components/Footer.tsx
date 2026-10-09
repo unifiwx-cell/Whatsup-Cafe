@@ -32,7 +32,7 @@ export function Footer() {
             <button
               type="button"
               onClick={scrollToTop}
-              className="p-3 bg-white/5 hover:bg-[#D4FF45] text-white hover:text-[#10110F] border border-white/15 rounded-full transition-all cursor-pointer flex items-center gap-2 text-xs font-semibold uppercase tracking-wider"
+              className="p-3 bg-white/5 hover:bg-[#FF5500] text-white hover:text-white border border-white/15 rounded-full transition-all cursor-pointer flex items-center gap-2 text-xs font-semibold uppercase tracking-wider shadow-sm hover:shadow-[0_0_20px_rgba(255,85,0,0.4)]"
               aria-label="Back to top"
             >
               <span>Back to Top</span>
@@ -46,35 +46,35 @@ export function Footer() {
           
           {/* Col 1: Quick Navigation */}
           <div className="space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-[#D4FF45] font-bold">
+            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-[#FF5500] font-bold">
               Navigation
             </h4>
             <ul className="space-y-2 text-white/70">
-              <li><a href="#home" className="hover:text-[#D4FF45] transition-colors">Home Experience</a></li>
-              <li><a href="#menu" className="hover:text-[#D4FF45] transition-colors">Culinary Menu</a></li>
-              <li><a href="#rooftop" className="hover:text-[#D4FF45] transition-colors">Rooftop Terrace</a></li>
-              <li><a href="#drinks" className="hover:text-[#D4FF45] transition-colors">Craft Cocktails</a></li>
-              <li><a href="#reviews" className="hover:text-[#D4FF45] transition-colors">Guest Reviews</a></li>
-              <li><a href="#contact" className="hover:text-[#D4FF45] transition-colors">Location & Hours</a></li>
+              <li><a href="#home" className="hover:text-[#FF5500] transition-colors">Home Experience</a></li>
+              <li><a href="#menu" className="hover:text-[#FF5500] transition-colors">Culinary Menu</a></li>
+              <li><a href="#rooftop" className="hover:text-[#FF5500] transition-colors">Rooftop Terrace</a></li>
+              <li><a href="#drinks" className="hover:text-[#FF5500] transition-colors">Craft Cocktails</a></li>
+              <li><a href="#reviews" className="hover:text-[#FF5500] transition-colors">Guest Reviews</a></li>
+              <li><a href="#contact" className="hover:text-[#FF5500] transition-colors">Location & Hours</a></li>
             </ul>
           </div>
 
           {/* Col 2: Business Info */}
           <div className="space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-[#D4FF45] font-bold">
+            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-[#FF5500] font-bold">
               Southern Avenue
             </h4>
             <div className="space-y-2 text-white/70">
               <p className="flex items-start gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-[#D4FF45] shrink-0 mt-0.5" />
+                <MapPin className="w-3.5 h-3.5 text-[#FF5500] shrink-0 mt-0.5" />
                 <span>Gate 2, 122/A Southern Avenue, opp. Nazrul Manch, Kolkata 700029</span>
               </p>
               <p className="flex items-center gap-1.5">
-                <Phone className="w-3.5 h-3.5 text-[#D4FF45] shrink-0" />
+                <Phone className="w-3.5 h-3.5 text-[#FF5500] shrink-0" />
                 <a href={`tel:${CAFE_INFO.phoneRaw}`} className="hover:text-white transition-colors">{CAFE_INFO.phone}</a>
               </p>
               <p className="flex items-center gap-1.5">
-                <Globe className="w-3.5 h-3.5 text-[#D4FF45] shrink-0" />
+                <Globe className="w-3.5 h-3.5 text-[#FF5500] shrink-0" />
                 <a href={CAFE_INFO.officialWebsite} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">whatsupltd.com</a>
               </p>
             </div>
@@ -82,12 +82,12 @@ export function Footer() {
 
           {/* Col 3: Hours & Timing */}
           <div className="space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-[#D4FF45] font-bold">
+            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-[#FF5500] font-bold">
               Operating Hours
             </h4>
             <div className="space-y-1.5 text-white/70">
               <p className="font-semibold text-white">Open Every Day</p>
-              <p className="font-mono text-[#D4FF45]">12:00 PM – 12:30 AM</p>
+              <p className="font-mono text-[#FF5500]">12:00 PM – 12:30 AM</p>
               <p className="text-white/50 text-[11px] pt-1">
                 Lunch, Afternoon Chill, Golden Hour Sunset, Dinner, & Late-Night Cocktails.
               </p>
@@ -96,7 +96,7 @@ export function Footer() {
 
           {/* Col 4: Connect & Delivery */}
           <div className="space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-[#D4FF45] font-bold">
+            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-[#FF5500] font-bold">
               Connect
             </h4>
             <div className="flex items-center gap-3">
@@ -113,7 +113,7 @@ export function Footer() {
                 href={CAFE_INFO.socials.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 bg-white/5 hover:bg-[#D4FF45] text-white hover:text-[#10110F] border border-white/15 rounded-sm transition-all"
+                className="p-2.5 bg-white/5 hover:bg-[#FF5500] text-white hover:text-white border border-white/15 rounded-sm transition-all"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
@@ -122,7 +122,7 @@ export function Footer() {
                 href={CAFE_INFO.officialWebsite}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 bg-white/5 hover:bg-[#D4FF45] text-white hover:text-[#10110F] border border-white/15 rounded-sm transition-all"
+                className="p-2.5 bg-white/5 hover:bg-[#FF5500] text-white hover:text-white border border-white/15 rounded-sm transition-all"
                 aria-label="Official Website"
               >
                 <Globe className="w-4 h-4" />
@@ -146,8 +146,8 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Subtle Animated Lime Line as final visual element */}
-        <div className="mt-8 h-[2px] w-full bg-gradient-to-r from-transparent via-[#D4FF45] to-transparent opacity-60" />
+        {/* Subtle Animated Orange Line as final visual element */}
+        <div className="mt-8 h-[2px] w-full bg-gradient-to-r from-transparent via-[#FF5500] to-transparent opacity-70" />
 
       </div>
     </footer>

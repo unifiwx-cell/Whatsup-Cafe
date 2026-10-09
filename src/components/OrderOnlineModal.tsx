@@ -29,12 +29,12 @@ export function OrderOnlineModal({ isOpen, onClose }: OrderOnlineModalProps) {
 
         <div className="space-y-6">
           <div className="space-y-1 border-b border-white/10 pb-4">
-            <div className="flex items-center gap-1.5 text-xs uppercase font-bold tracking-widest text-[#D4FF45]">
+            <div className="flex items-center gap-1.5 text-xs uppercase font-bold tracking-widest text-[#FF5500]">
               <Bike className="w-3.5 h-3.5" />
               <span>Doorstep Delivery & Takeaway · অনলাইন অর্ডার</span>
             </div>
             <h3 className="text-2xl font-black text-white">
-              ORDER FROM WHATS<span className="text-[#D4FF45]">UP</span>
+              ORDER FROM WHATS<span className="text-[#FF5500]">UP</span>
             </h3>
             <p className="text-xs text-white/60">
               Freshly grilled kebabs, wood-fired pizzas and pasta delivered hot to your doorstep.
@@ -93,10 +93,10 @@ export function OrderOnlineModal({ isOpen, onClose }: OrderOnlineModalProps) {
             <div className="p-4 bg-[#10110F] border border-white/10 rounded-sm space-y-2">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <Utensils className="w-4 h-4 text-[#D4FF45]" />
+                  <Utensils className="w-4 h-4 text-[#FF5500]" />
                   <h4 className="text-sm font-bold text-white">Direct Drive-Through & Takeaway</h4>
                 </div>
-                <span className="text-[10px] uppercase font-mono text-[#D4FF45] bg-[#D4FF45]/10 px-2 py-0.5 rounded-xs">
+                <span className="text-[10px] uppercase font-mono text-[#FF5500] bg-[#FF5500]/10 px-2 py-0.5 rounded-xs">
                   Zero Commission
                 </span>
               </div>
@@ -106,7 +106,7 @@ export function OrderOnlineModal({ isOpen, onClose }: OrderOnlineModalProps) {
               <div className="pt-2">
                 <a
                   href={`tel:${CAFE_INFO.phoneRaw}`}
-                  className="w-full py-2.5 px-4 bg-[#D4FF45] hover:bg-[#bce438] text-[#10110F] font-bold text-xs uppercase tracking-wider rounded-sm flex items-center justify-center gap-2 transition-colors"
+                  className="w-full py-2.5 px-4 bg-[#FF5500] hover:bg-[#e64a00] text-white font-bold text-xs uppercase tracking-wider rounded-sm flex items-center justify-center gap-2 transition-colors shadow-md"
                 >
                   <Phone className="w-3.5 h-3.5" />
                   <span>Call to Order: {CAFE_INFO.phone}</span>

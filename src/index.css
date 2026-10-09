@@ -28,7 +28,7 @@
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #777B53;
+  background: #FF5500;
 }
 
 /* Horizontal scroll hide */
