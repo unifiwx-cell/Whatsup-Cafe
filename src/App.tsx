@@ -9,6 +9,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ScrollMarquee } from './components/ScrollMarquee';
 import { Introduction } from './components/Introduction';
+import { FoodSliderReel } from './components/FoodSliderReel';
 import { MenuSection } from './components/MenuSection';
 import { FoodGallery } from './components/FoodGallery';
 import { RooftopExperience } from './components/RooftopExperience';
@@ -77,7 +78,13 @@ export default function App() {
           onExploreMenu={handleExploreMenu}
         />
 
-        {/* 4. Culinary Menu */}
+        {/* 4. Sliding Food Reel (Left to Right with Images) */}
+        <FoodSliderReel
+          onOpenOrder={handleOpenOrder}
+          onOpenReservation={handleOpenReservation}
+        />
+
+        {/* 5. Culinary Menu */}
         <MenuSection
           onOpenOrder={handleOpenOrder}
           onOpenReservation={handleOpenReservation}

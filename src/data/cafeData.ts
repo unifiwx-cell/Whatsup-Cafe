@@ -55,7 +55,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 495,
     isPopular: true,
     diet: 'non-veg',
-    imageUrl: '/src/assets/images/whatsup_aglio_olio_1791547852025.jpg',
+    imageUrl: '/src/assets/images/whatsup_chicken_roulade_1791551239437.jpg',
     tags: ['Continental', 'Chef Choice'],
   },
   {
@@ -91,7 +91,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 520,
     isPopular: true,
     diet: 'veg',
-    imageUrl: '/src/assets/images/whatsup_aglio_olio_1791547852025.jpg',
+    imageUrl: '/src/assets/images/whatsup_woodfired_pizza_1791551226978.jpg',
     tags: ['Sourdough', 'Stone Oven'],
   },
   {
@@ -162,7 +162,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 360,
     isPopular: true,
     diet: 'veg',
-    imageUrl: '/src/assets/images/whatsup_intro_lifestyle_1791547826311.jpg',
+    imageUrl: '/src/assets/images/whatsup_sizzling_brownie_1791551254039.jpg',
     tags: ['Decadent', 'Hot & Cold'],
   },
   {
@@ -243,23 +243,30 @@ export const GALLERY_HIGHLIGHTS = [
   },
   {
     number: '03',
+    title: 'Chicken Roulade',
+    category: 'Continental Mains',
+    description: 'Spinach and mushroom stuffed chicken breast with creamy velouté and potato purée.',
+    image: '/src/assets/images/whatsup_chicken_roulade_1791551239437.jpg',
+  },
+  {
+    number: '04',
+    title: 'Woodfired Sourdough Pizza',
+    category: 'Stone Oven',
+    description: 'Bubbly blistered sourdough crust with bocconcini, San Marzano reduction, and basil.',
+    image: '/src/assets/images/whatsup_woodfired_pizza_1791551226978.jpg',
+  },
+  {
+    number: '05',
+    title: 'Sizzling Chocolate Brownie',
+    category: 'Hot & Cold Dessert',
+    description: 'Cast-iron skillet fudge brownie, vanilla gelato, and cascading hot chocolate fudge.',
+    image: '/src/assets/images/whatsup_sizzling_brownie_1791551254039.jpg',
+  },
+  {
+    number: '06',
     title: 'Artisanal Mixology',
     category: 'Cocktail Bar',
     description: 'Crystal glasses, crushed ice, hand-plucked mint, and small-batch spirits.',
     image: '/src/assets/images/whatsup_cocktails_drinks_1791547864350.jpg',
-  },
-  {
-    number: '04',
-    title: 'Southern Avenue Skyline',
-    category: 'Rooftop Terrace',
-    description: 'Panoramic views over Kolkata city lights and the Rabindra Sarobar tree canopy.',
-    image: '/src/assets/images/whatsup_rooftop_sunset_1791547875878.jpg',
-  },
-  {
-    number: '05',
-    title: 'The Evening Mood',
-    category: 'Social Lounge',
-    description: 'Lively rooftop evenings, intimate conversations, and memories worth staying out for.',
-    image: '/src/assets/images/whatsup_intro_lifestyle_1791547826311.jpg',
   },
 ];
