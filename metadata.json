@@ -1,0 +1,6 @@
+{
+  "name": "WhatsUp Cafe Kolkata | Rooftop Lounge Bar",
+  "description": "Experience WhatsUp Cafe (হোয়াটসআপ ক্যাফে) on Southern Avenue, Kolkata. Rooftop lounge bar with live music, craft cocktails, kebabs, and city lights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
